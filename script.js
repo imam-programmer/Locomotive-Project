@@ -19,7 +19,8 @@ function Loading(){
     },"enem")
     
     tl.to("#loader",{
-       display:"none"
+       display:"none",
+
     })
 }
 Loading()

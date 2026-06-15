@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+#main{
+    background: #000;
+}
 #loader{
     height: 100vh;
     background: #000;
@@ -45,6 +48,12 @@
     background: #F5e41b;
     z-index: 7;
 }
+#nav{
+    position: absolute;
+    z-index: 10;
+    padding: 30px 50px;
+}
+
 #page1{
     height: 100vh;
     background: #F5e41b;
