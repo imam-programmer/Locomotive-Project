@@ -14,7 +14,8 @@
   display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 99;
+    /* z-index: 99; */
+
     
 }
 #loader img{
@@ -72,7 +73,69 @@
 #page2{
     height: 100vh;
     background: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+.elem{
+    width: 100%;
+    background: red;
+    position: relative;
+}
+.elem h2{
+    font-size: 6vw;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.elem .moving{
+    background: #F5e41b;
+    width: 100%;
+    white-space: nowrap;
+    padding: 10px 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+    
+   
+}
+.elem .moving .moving-in{
+    display: inline-block;
+     white-space: nowrap;
+      animation: moving 6s infinite linear;
+      /* position: absolute; */
+   
+ 
+     
+}
+.elem .moving .moving-in h5{
+    color: black;
+    display: inline-block;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-right: 30px;
+    
+}
+@keyframes moving {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 #page3{
     height: 100vh;
     background: #fff;
