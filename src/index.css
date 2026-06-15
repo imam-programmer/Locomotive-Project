@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.footer{
+    height: 100vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    height: 100vh;
+    background: #ac2222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner{
+    height: 100vh;
+    background: #1806b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
