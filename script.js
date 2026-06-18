@@ -27,7 +27,9 @@ const scroll = new LocomotiveScroll({
     el:document.querySelector("#main"),
     smooth:true
 });
-
+document.querySelector("#footer h3").addEventListener("click",()=>{
+    scroll.scrollTo(0)
+})
 let elems=document.querySelectorAll(".elem")
 let main=document.querySelector("#page2")
 elems.forEach((ele)=>{
@@ -35,8 +37,5 @@ elems.forEach((ele)=>{
        let bgimg=ele.getAttribute("data-img")
        main.style.backgroundImage=`url(${bgimg})`
     })
-    //     ele.addEventListener("mouseleave",()=>{
-    //    let bgimg=ele.getAttribute("data-img")
-    //     main.style.backgroundImage=`none`
-    // })
+ 
 })
