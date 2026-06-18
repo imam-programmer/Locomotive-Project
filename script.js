@@ -35,8 +35,8 @@ elems.forEach((ele)=>{
        let bgimg=ele.getAttribute("data-img")
        main.style.backgroundImage=`url(${bgimg})`
     })
-        ele.addEventListener("mouseleave",()=>{
-       let bgimg=ele.getAttribute("data-img")
-        main.style.backgroundImage=`none`
-    })
+    //     ele.addEventListener("mouseleave",()=>{
+    //    let bgimg=ele.getAttribute("data-img")
+    //     main.style.backgroundImage=`none`
+    // })
 })
