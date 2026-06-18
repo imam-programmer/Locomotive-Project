@@ -14,7 +14,7 @@
   display: flex;
     align-items: center;
     justify-content: center;
-    /* z-index: 99; */
+    z-index: 99;
 
     
 }
@@ -78,16 +78,33 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    flex-direction: column;
 }
 .elem{
     width: 100%;
-    background: red;
     position: relative;
+     cursor: pointer;
+}
+.elem .blur{
+    position: absolute;
+    width: 30%;
+    background: #F5e41b;
+   filter: blur(8px);
+    z-index: 8;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+    height: 100%;
 }
 .elem h2{
     font-size: 6vw;
     text-transform: uppercase;
     font-weight: 500;
+    position: relative;
+    z-index: 9;
+    
+    /* transition: 0.3s; */
+    
 }
 .elem .moving{
     background: #F5e41b;
@@ -96,7 +113,9 @@
     padding: 10px 0;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+transform: translate(0,-45%) scaleY(0);
+  transition: 0.3s;
+ 
     
    
 }
@@ -105,6 +124,7 @@
      white-space: nowrap;
       animation: moving 6s infinite linear;
       /* position: absolute; */
+      
    
  
      
@@ -115,7 +135,9 @@
     font-size: 20px;
     text-transform: uppercase;
     margin-right: 30px;
-    
+    transition: 0.5s;
+    transition-delay: 0.2s;
+    opacity: 0;
 }
 @keyframes moving {
     from{
@@ -124,6 +146,18 @@
     to{
         transform: translateX(-100%);
     }
+}
+.elem:hover .moving{
+   transform:  translate(0,-50%) scaleY(1);
+}
+.elem:hover .moving h5{
+  opacity: 1;
+}
+.elem:hover h2{
+    /* color: black; */
+    font-style: italic;
+    -webkit-text-stroke: 2px rgb(26, 255, 26);
+    color: transparent;
 }
 
 

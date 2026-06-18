@@ -1,5 +1,4 @@
 function Loading(){
-
     let tl=gsap.timeline()
     tl.to("#yellow1",{
     y:"-100%",
