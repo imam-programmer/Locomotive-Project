@@ -28,3 +28,15 @@ const scroll = new LocomotiveScroll({
     smooth:true
 });
 
+let elems=document.querySelectorAll(".elem")
+let main=document.querySelector("#page2")
+elems.forEach((ele)=>{
+    ele.addEventListener("mouseenter",()=>{
+       let bgimg=ele.getAttribute("data-img")
+       main.style.backgroundImage=`url(${bgimg})`
+    })
+        ele.addEventListener("mouseleave",()=>{
+       let bgimg=ele.getAttribute("data-img")
+        main.style.backgroundImage=`none`
+    })
+})
