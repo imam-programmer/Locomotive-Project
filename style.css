@@ -165,7 +165,7 @@ row-gap: 30px;
 .image-div{
     height: 600px;
     width: 500px;
-    background: red;
+    /* background: red; */
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
